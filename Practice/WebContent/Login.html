@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="ISO-8859-1">
+<title>insert title here</title>
+</head>
+<body>
+<form  action="NextPage.jsp" >
+<label>UserName:</label><br/> 
+<input type="text"  name="name" id="name"/><br/>
+<label>PassWord:</label><br/>
+<input type="password"  name="password" id="pwd"/>
+  <a href="#" onclick="showpass()"> <img src="https://cdn3.iconfinder.com/data/icons/digital-marketing/512/search_magnifier_lens_loupe_flat_icon-512.png" width="10px" height="10px" /></a><br/>
+  <span id="span1"> </span><br/>
+<span id="span2"></span><br/>
+<input type="submit" value="submit">
+</form>
+
+
+
+
+<script>
+function validate(){
+	var username=document.getElementById("name").value;
+	var password=document.getElementById("pwd").value;
+	password=password.toLowerCase();
+	//console.log(username=="admin");
+	if(username=="admin" && password=="admin"){
+		document.getElementById("span1").innerHTML="success";
+		return true;
+	}
+	else if(username==""&&password==""){
+		document.getElementById("span1").innerHTML="plz enter correctly";
+		return false;
+	
+	}
+	else{
+		document.getElementById("span1").innerHTML="plz enter correct values";
+		return false;
+	}
+}	 
+	
+function showpass(){
+	var r=document.getElementById("pwd");
+	if(r.type=="text"){
+		r.type="password";
+}
+	else{
+		r.type="text";
+		}
+	}
+
+</script>
+
+
+</body>
+</html>
