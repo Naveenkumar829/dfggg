@@ -1,0 +1,20 @@
+body{
+	background-image: url(Images/b.jpg);  width:100%;
+  position: relative;
+  color:dark;
+  height:100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+center{
+	color:darkblue;
+	
+}
+form{
+	margin-top:auto;
+}
+.btn{
+	color:blue;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Artistry Events</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+<nav class="navbar fixedtop">
+	
+		<img src="Images/logo.png" style="width:90px;height:40px">
+			<div class="navbar-brand" style="color:white">Artistry Events</div>
+				<ul class="nav ">
+					<li class="nav-item"><a class="nav-link" href="#"style="color:white">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="Aboutus.html"style="color:white">About us</a></li>
+  						<li class="nav-item dropdown">
+        					<a class="nav-link  dropdown-toggle text-center" href="#"  data-toggle="dropdown" style="color:white">
+        						  Events
+       						</a>
+       						<div class="dropdown-menu" style="background-color:rgb(35, 180, 224)"> 
+						       <a class="dropdown-item" href="ConferenceServlet" style="color:white;background-color:rgb(35, 180, 224)">Conference/Seminars</a>
+						       <a class="dropdown-item" href="CoperateEventServlet"style="color:white;background-color:rgb(35, 180, 224)">Coperate Event Organiser</a>
+						       <a class="dropdown-item" href="ConsertsServlet"style="color:white;background-color:rgb(35, 180, 224)">Conserts</a>
+						       <a class="dropdown-item" href="AuctionEventServlet"style="color:white;background-color:rgb(35, 180, 224)">Auction Exhibition</a>
+						        <a class="dropdown-item" href="WeddingPartyOrganiserServlet" style="color:white;background-color:rgb(35, 180, 224)">Wedding Party Organiser</a>
+						      <a class="dropdown-item" href="ExhibitionServlet"style="color:white;background-color:rgb(35, 180, 224)">Exhibition and Trade Fair</a>
+						       <a class="dropdown-item" href="PartyOrganiserServlet"style="color:white;background-color:rgb(35, 180, 224)">Party Organiser</a>
+						       <a class="dropdown-item" href="BirthdayPartyServlet" style="color:white;background-color:rgb(35, 180, 224)">Birthday  Party Organiser</a>
+						       <a class="dropdown-item" href="NewproductServlet" style="color:white;background-color:rgb(35, 180, 224)">New Product</a>
+						    </div>
+  						</li>
+					<li class="nav-item"><a class="nav-link" href="Contact.html"style="color:white">Contact</a></li>
+					<form action="LogoutServlet">
+					<button class="btn btn-default text-white">Logout</button>
+					</form>
+				</ul>
+		
+			</nav>
+<div class="container-fluid">		
+<div class="row">
+<marquee behaviour="scroll" direction="right" onmouseover="this.stop()" onmouseout="this.start()"><h3>Welcome to Artistry Events!!!</h3>
+</marquee>
+</div>
+<div class="row">
+<div class="col-4">
+<b style="margin-left:150px">Event Updates</b>
+<marquee behaviour="scroll" direction="up"onmouseover="this.stop()" onmouseout="this.start()"><br/> 1.
+    <a href="#"> 05-07-2018 Spot admissions counseling for International Collaborative Programs (ICP) – MVGR-BTH (Sweden) – 2018 is scheduled
+      on 19-07-2018 at 9.00 am for details click here</a>
+    <br/> 2.
+    <a href="#"> 02-07-2018 MVGR – DAP – Academic Calendars of M.Tech, M.Pharm and MCA for the academic Year 2018-19</a>
+    <br/> 3.
+    <a href="#">26-06-2018 MVGR/DA/International Collaborative Programs(ICP) Counseling Revised Circular for details click here</a>
+    <br/> 4.
+    <a href="#"> 26-06-2018 MVGR – DAP – ALL ACADEMIC CALENDARS FOR PHARM D – 2018-19</a>
+    <br/> 5.
+    <a href="#">26-06-2018 MVGR – DAP – ACADEMIC CALENDARS FOR MBA (ALL TYPES) 2018-19</a>
+    <br/> 6.
+    <a href="#"> 23-06-2018 MVGR – DAP – SYLLABUS – R16 – AGRICULTURAL ENGG III THIRD YEAR(V & VI SEMESTERS)</a>
+      </marquee>
+    </div>
+<div class="col-8">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images\Parties.jpg" alt="Los Angeles" style="width:800px;height:380px">
+    </div>
+    <div class="carousel-item">
+      <img src="Images\events.jpg" alt="Hard Rock Cafe"style="width:800px;height:380px">
+    </div>
+    <div class="carousel-item">
+      <img src="Images\party.jpg" alt="Strom festival"style="width:800px;height:380px">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div><p class="mt-3">
+Our Team Is Led By Jack And Ratna Balani (Event Directors)
+Jack, originally from Mumbai, and Ratna, from Holland; have both worked and lived in the Caribbean and the USA for over a decade.
+</p>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

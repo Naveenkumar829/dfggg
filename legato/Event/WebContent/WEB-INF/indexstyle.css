@@ -1,0 +1,22 @@
+.navbar{
+	background-image: url(Images/grou.jpg);  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.dropdown-menu{
+	border:1px solid grey;
+}
+body{
+	background-color:white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+	
+}
+marquee{
+	color:blue;
+	
+}

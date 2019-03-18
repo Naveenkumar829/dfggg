@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="Login.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body >
+<div class="container-fluid">
+<div class="row">
+<div class="col-4 mt-5">
+<img class="img-fluid" src="Images\male.png" title="Adem" style="width:auto;height:auto"></div>
+<div class="col-4" style="font-size:2vw">
+<center><b>It's <i>time</i> to Login!!</b></center>
+<form method="post" class="form-group" style="font-size:2vw" onsubmit="return login()" action="MainServlet">
+<label for="username">Username</label> <span id="user" style="font-size:15px"></span>
+<input type="text" class="form-control" name="username" id="username" placeholder="Username"style="border-radius: 25px;">
+<label for="password">Password</label>
+<input type="password" id="password"class="form-control" name="password" placeholder="Password"style="border-radius: 25px;">
+<input type="checkbox" class="mt-3" onclick="showpassword()">
+<label>Show Password</label><br/>
+<button type="submit"  class="btn  btn-light">Login</button>
+<p class="mt-4">Not Registered ?<br/><a href="Register.jsp" > Create an Account</a></p>
+</form>
+</div>
+<div class="col-4 mt-5">
+<img src="Images\female.png" title="Eve"style="width:auto;height:auto" class="img-fluid"></div>
+</div>
+</div>
+<script>
+function login(){
+	var x=document.getElementById("username").value.trim();
+	var y=document.getElementById("password").value.trim();
+	console.log(x);
+	if(x==""&&y==""){
+		document.getElementById("user").innerHTML="please Enter the username and Password";
+		document.getElementById("user").style.color="red";
+	return false;
+	}
+	else if(x==""||y==""){
+		document.getElementById("user").innerHTML="please Enter the username or Password";
+		document.getElementById("user").style.color="red";
+	return false;
+	}
+	else{
+		document.getElementById("user").innerHTML=" ";
+	return true;
+}}
+
+function showpassword(){
+	var pass1=document.getElementById("password");
+
+	
+	if(pass1.type=="password"){
+		pass1.type="text";
+
+	}
+	else{
+		pass1.type="password";
+	
+	}
+}
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	history.pushState(null,null,$(location).attr('href'));
+	window.addEventListener('popstate',function(){
+		history.pushState(null,null,$(location).attr('href'));
+	});
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
